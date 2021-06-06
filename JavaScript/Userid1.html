@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript">
+function userid(f1)
+{
+var uidlen=uid.value.length;
+if(uidlen==0 || uidlen>=5 || uidlen<=12)
+  {alert("User Id should not be empty / length be between 5 to 12 characters");
+   uid.focus();
+   return false;
+   } 
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Enter User ID : <input type="text" name="uid">
+<br><input type="button" name="c1" onclick="userid(f1)" value="check">
+</form>
+</body>
+</html>

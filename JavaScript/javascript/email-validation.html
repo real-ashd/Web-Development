@@ -1,0 +1,26 @@
+<SCRIPT LANGUAGE="javascript">
+
+// Check for a valid email address (Does it contain a "@", followed
+// by a '.'. Return True if it is valid and false if not.
+// Also alert the user with an error message.
+//
+function checkEmail(theField) 
+{
+   if (theField.indexOf('@', 0) > 0 && (theField.indexOf('.',0) > theField.indexOf('@',0)))
+   {
+      return true;
+   } 
+   else 
+   {
+      alert("Your email address was an invalid format.  Please try again.");
+      return false;
+   }
+}
+</SCRIPT>
+
+<FORM NAME=emailform ACTION="yourcgihere.cgi" METHOD=POST onSubmit="return checkEmail(window.document.emailform.emailAddress.value)">
+Please enter your email address:<P>
+<INPUT TYPE=text NAME="emailAddress" VALUE=""><P>
+<INPUT TYPE=submit NAME="Submit" VALUE="Submit">
+</FORM>
+

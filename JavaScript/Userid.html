@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript">
+function chk(f1)
+  {
+   var a;
+   a=f1.userid.value;
+   if(a.length>=6 && a.length<=12)
+             {
+             alert("UserID is Valid");
+             break;
+             }
+   else
+           {alert("User Id must be between 6 to 12 characters");} 
+     }
+</script>
+</head>
+<body>
+<form name="f1">
+Enter User ID : <input type="text" name="userid">
+<br><input type="button" name="c1" onclick="chk(f1)" value="check">
+</form>
+</body>
+</html>

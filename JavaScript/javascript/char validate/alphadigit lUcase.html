@@ -1,0 +1,43 @@
+<body>
+<h1>
+<SCRIPT Language="JavaScript">
+var str = "Hello 2 the World!"
+var chr = ""
+var ndigits = 0
+var nLowerAlpha = 0
+var nUpperAlpha = 0
+var nspl = 0
+for (position = 0; position < str.length; position++)
+{
+   chr = str.charAt(position);
+   if (chr >= "0" && chr <= "9")
+    {
+      ndigits++;
+    }
+   else
+   { 
+      if (chr >= "a" && chr <= "z")
+        {
+           nLowerAlpha++;
+        }
+     else
+       {   
+          if (chr >= "A" && chr <= "Z") 
+            {
+                       nUpperAlpha++;
+            }
+         else
+           { 
+                     nspl++;
+           } 
+       }
+   }
+
+}
+
+document.write("<P>There were " + ndigits + " digits,<BR>")
+document.write(nLowerAlpha + " lower case alphabetic characters, <BR>")
+document.write("and " + nUpperAlpha + " upper case alphabetic characters.</P>")
+document.write("and " + nspl + " special  characters.</P>")
+</SCRIPT>
+

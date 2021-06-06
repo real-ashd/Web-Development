@@ -1,0 +1,26 @@
+<script language="javascript">
+function validate(f1)
+{ 
+     var a;
+      a=f1.text1.value;
+     if(a=="")
+     {        
+       alert(" plz enter ph number")
+        exit();
+      }
+ /*     if(a.length<=10)
+     {        
+       alert(" plz enter 10 DIGIT NUMBER")
+      }  */  
+     if(IsNaN(a)==true)
+      {        
+       alert(" plz enter proper NUMBER")
+      }
+}
+</script>
+<body>
+<form Onsubmit="validate(this.form)" action="">   
+   phone number::<input type="text" name="text1" size="10">
+ <input type="button" value="submit" onclick="validate(this.form)">
+</form>
+</body>

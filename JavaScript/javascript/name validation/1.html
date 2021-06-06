@@ -1,0 +1,34 @@
+<head>
+<script language="javascript">
+function chk(f1)
+{   
+   var chr,position,a;
+   a=f1.text1.value;
+   if(a.length==0)  
+   {
+     alert("plz enter the name")
+   } 
+
+   for(position = 0; position < a.length; position++)
+    {
+      chr=a.charAt(position)
+      
+      if(!((chr>="A" && chr<="Z")||(chr>="a" && chr<="z")) )
+      {     
+         alert('enter only alphabets')
+         break; 
+      }
+    } 
+
+}
+</script>
+</head>
+
+<body>
+<form name="form1">
+enter name<input type="text" name="text1">
+<br>
+<input type="button" name="c1" onclick='chk(form1)'value="  check   ">
+
+</form>
+</body>

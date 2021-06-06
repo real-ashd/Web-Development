@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript">
+function chk(f1)
+  {
+   var chr,i,a;
+   a=f1.mob.value;
+   if(!(a.length==10))
+             {alert("Phone Number must be 10 digits");}
+   for(i=0;i<a.length;i++)
+        {
+         chr=a.charAt(i);
+         if(!(chr>="0" && chr<="9"))
+            {
+             alert("Enter digits Only");
+             return false;
+             break;
+            }
+        if(chr>="0" && chr<="9" && a.length==10)
+            {
+             alert("Mobile number is Valid");
+             return true;
+             break;
+             }
+         }
+  }
+</script>
+</head>
+<body>
+<form name="f1">
+Enter Mobile Number : <input type="text" name="mob" required>
+<br><input type="button" name="c1" onclick="chk(f1)" value="check">
+</form>
+</body>
+</html>

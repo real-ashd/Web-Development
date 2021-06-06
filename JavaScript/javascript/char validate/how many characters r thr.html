@@ -1,0 +1,19 @@
+<SCRIPT Language="JavaScript">
+
+var str = "Hello 2 the World!"
+var chr = ""
+var nAlpha = 0
+
+for (position = 0; position < str.length; position++)
+ {
+   chr = str.charAt(position);
+   if ((chr >= "a" && chr <= "z") || (chr >= "A" && chr <= "Z")) 
+     {
+          nAlpha++;
+     }
+ }
+
+document.write("<P>There were " + nAlpha + " English alphabet characters.</P>")
+
+</SCRIPT>
+

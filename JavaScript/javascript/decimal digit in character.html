@@ -1,0 +1,21 @@
+<body>
+<h1>
+<SCRIPT Language="JavaScript">
+
+var str = "Hello 234 the World!"
+var chr = ""
+var nDigits = 0
+
+for (position = 0; position < str.length; position++)
+{
+   chr = str.charAt(position)
+   if (chr >= "0" && chr <= "9") 
+   { 
+    nDigits++;
+   } 
+}
+
+document.write("<P>There were " + nDigits + " decimal digit characters.</P>")
+
+</SCRIPT>
+

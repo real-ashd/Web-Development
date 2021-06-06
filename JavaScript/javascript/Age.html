@@ -1,0 +1,33 @@
+<html>
+<head>
+<script language="javascript">
+function check(f2)
+{
+var x;
+var st=f2.t1.value;
+var i=st.length;
+for(x=0;x<i;x++)
+{
+ch=st.charAt(x);
+if((i<=2)&&(ch>="0" && ch<="9"))
+{
+	alert("Age Validation is Successfully");
+	break;
+}
+else
+{
+	alert("Enter Only two  Digit ");
+	break;
+}
+}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Enter Age : <input type="text" name="t1" value=""/>
+<input type="button" name="b1" value="checks" onClick="check(f1)"/>
+</form>
+</body>
+</html>
+ 
