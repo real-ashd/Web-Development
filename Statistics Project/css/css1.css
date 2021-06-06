@@ -1,0 +1,39 @@
+ul{list-style-type:none;}
+li {font-size:20px;margin:4px;}
+li a {display: inline-block;color:black;border-radius:5px;text-align:center;font-family: Arial;padding: 10px 16px;text-decoration:none;}
+li a.active{background-color:grey;color:white;}
+li a.active:hover{color:black;}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0;background-color:transparent;}
+
+.class{opacity:0.8;}
+.class:hover{opacity:1;}
+
+table {border-collapse: collapse;}
+th,td {text-align:center;padding: 8px;}
+tr:nth-child(even){background-color: #f2f2f2}
+th {background-color: #4CAF50;color: white;}
+
+.h{color:blue;text-align:center;}
+h2{color:white;text-align:center;}
+.b{color:green;}
+h3{color:blue;}
+h1{text-align:center;font-size:50px;color:red;text-shadow: 2px 2px 5px blue;}
+.h4{text-align:justify;padding:0 10px 0 10px;display:inline-block;}
+
+.prof{height:320px;width:480px;float:right;}
+.prof1{height:200px;width:200px;float:right;}
+
+div.form{box-shadow: 0 2px 2px 2px grey;border-radius: 15px;background-color:grey;padding: 20px;width:50%;margin:auto;margin-top:20px;}
+
+input[type=submit]{width: 15%;background-color:black;
+    color: white;padding: 12px 12px;margin: auto;
+    border: none;border-radius: 10px;cursor: pointer;}
+input[type=submit]:hover {background-color:lightgrey;transition-duration:0.8s;}
+.inputbox{width:auto;padding: 10px 10px;margin:8px;
+    display: inline-block;border: 1px solid white;padding-left:20px;border-radius: 8px;box-sizing: border-box;background-color:Gainsboro;}
+.inputbox:focus{box-shadow: 0 0 4px 2px green;border: 1px solid blue;}
+
+#foot{font-size:15px;padding-top:20px;margin:auto;text-align:center;}
+#a{color:blue;}

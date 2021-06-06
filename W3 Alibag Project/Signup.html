@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="css\W3.css">
+<link rel="stylesheet" type="text/css" href="css\css.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<img src="images\banner.jpg" class="hover w3-round w3-border w3-padding w3-card-2" style="width:100%;height:320px;"></img>
+
+<div class="w3-shadow">
+<ul class="w3-navbar w3-blue w3-round w3-xlarge w3-margin-top">
+  <li><a href="Home.html" class="w3-hover-cyan w3-round"><i class="fa fa-home w3-xlarge"></i></a>
+  <li><a href="Login.html" class="menu w3-hover-cyan w3-round w3-hover-animate-zoom">Login</a>
+  <li class="active"><a href="Signup.html" class=" w3-hover-cyan w3-round">Sign Up</a>
+  <li class="w3-dropdown-hover w3-hover-cyan w3-round">
+      <a href="#" class="w3-hover-cyan">Beaches <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-card-4 w3-animate-zoom w3-blue w3-round" style="position:absolute;opacity:0.9;">
+      <a href="akshi.html" class=" w3-hover-cyan w3-round">Akshi</a>
+      <a href="mandwa.html" class=" w3-hover-cyan w3-round">Mandwa</a>
+	  <a href="nagaon.html" class=" w3-hover-cyan w3-round">Nagaon</a>
+	  <a href="awas.html" class=" w3-hover-cyan w3-round">Awas</a>
+    </div>
+  <li><a href="Feedback.html" class=" w3-hover-cyan w3-round">Feedback</a>
+  <li class=" w3-right"><a href="Contactus.html" class=" w3-hover-cyan w3-round">Contact Us</a>
+  </li>
+</ul></div>
+
+<header class="h1 w3-animate-left"><h1>Sign Up</h1></header>
+
+<section class="form1 w3-khaki">
+<form name="myForm" onSubmit="return validateForm()">
+  <input type="text" name="fname" placeholder="First Name" autofocus required class="inputbox"></input><sup>*</sup>
+  <input type="text" name="father" placeholder="Father's Name" class="inputbox"></input>
+  <input type="text" name="lname" placeholder="Last Name" required class="inputbox"></input><sup>*</sup><br> 
+  <b>Date Of Birth :- </b><input type="date"  class="inputbox" style="width:auto;"></input><sup>*</sup><br>
+  <b>Gender</b><b style="margin-left:43px;"> :- </b> 
+  <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other <br>
+  <input type="text" autocomplete="on" placeholder="Enter your aadhar number" required maxlength="12" class="inputbox"></input><sup>*</sup> 
+  
+  <textarea rows="2" cols="90" name="address" class="inputbox" placeholder="Enter your address" required style="max-width:90%;width:auto;"></textarea> <sup>*</sup><br>
+  <input type="text" name="city" placeholder="Enter your City/Town/Village" class="inputbox" required></input><sup>*</sup> 
+  <select class="inputbox" style="margin-left:73px;">
+    <option>--Select Your State--
+   	<option>Andhra Pradesh (AP)
+	<option>Arunachal Pradesh (AR)
+	<option>Assam (AS)
+	<option>Bihar (BR)
+	<option>Chhattisgarh (CG)
+	<option>Goa (GA)
+	<option>Gujarat (GJ)
+	<option>Haryana (HR)
+	<option>Himachal Pradesh (HP)
+	<option>Jammu and Kashmir (JK)
+	<option>Jharkhand (JH)
+	<option>Karnataka (KA)
+	<option>Kerala (KL)
+	<option>Madhya Pradesh (MP)
+	<option>Maharashtra (MH)
+	<option>Manipur (MN)
+	<option>Meghalaya (ML)
+	<option>Mizoram (MZ)
+  	<option>Nagaland (NL)
+	<option>Odisha(OR)
+	<option>Punjab (PB)
+	<option>Rajasthan (RJ)
+	<option>Sikkim (SK)
+	<option>Tamil Nadu (TN)
+	<option>Telangana (TS)
+	<option>Tripura (TR)
+	<option>Uttar Pradesh (UP)
+	<option>Uttarakhand (UK)
+	<option>West Bengal (WB)
+  </select><sup>*</sup><br>
+  <input type="text" name="pin" placeholder="Enter Pincode" required class="inputbox" maxlength="6"></input><sup>*</sup> [Note: Maxlength of pincode is 6 digit]<br>
+  <input type="text" name="mobile" placeholder="Enter Mobile Number" maxlength="10" required class="inputbox"></input><sup>*</sup><br>  
+  <input type="email" autocomplete name="email" placeholder="Enter email" required class="inputbox"></input><sup>*</sup><br>  
+  <input type="email" autocomplete name="email" placeholder="Re-type email" required class="inputbox"></input><sup>*</sup> <br> 
+  <input type="password" name="password" maxlength="24" placeholder="Password" required class="inputbox"></input><sup>* </sup>
+  Password length must be between 8 to 12 characters<br>
+  <input type="password" name="password" maxlength="24" placeholder="Confirm Password" required class="inputbox"></input><sup>*</sup> 
+
+  <P><P align="center"><input type="Reset" Value="Reset" style="width:15%;" class="w3-btn w3-btn-block w3-teal w3-round w3-large"></input>
+  <input type="Submit" value="Signup" style="width:15%;margin:auto;" class="w3-btn w3-btn-block w3-teal w3-round w3-large"></input><p align="center">
+  <small style="text-align:right;">Already have an account? <a href="Login.html" id="a" class="w3-section w3-text-green"> Login</a></small><br>
+</form>
+</section>
+ 
+<footer>
+<h6>&copy;Copyright<br>Developed by: <a href="ashu.html" id="a">Ashutosh Deshmukh</a></h6>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.h1{text-align:center;font-size:50px;margin:10px;color:deeppink;text-shadow: 2px 2px 5px blue;font-family:Arial;}
+.h2{text-align:left;font-size:20px;margin:8px;color:green;text-shadow: 2px 2px 5px grey;}
+h4{text-align:justify;padding:0 10px 0 10px;display:inline-block;}
+h6{font-size:10px;padding-top:20px;margin:auto;text-align:center;}
+.active{background-color:#0066cc;color:white;margin:0;border-radius:5px;}
+.hover{opacity:0.8}
+.hover:hover{opacity:1}
+.maps{width:80%;height:240px;margin:auto;background-color:red;margin-bottom:10px;}
+
+.container{width:100%;height:auto;margin-bottom:20px;}
+.image{margin: 5px;border-radius:5px;float:left;height:240px;display:inline;width:200px;}
+.city1{background-color:#0066cc;color:white;  text-align:justify;width:50%;height:100px;  overflow: hidden;font-size:1.1em;transition: height 2s;padding:10px;box-shadow:0 2px 2px 2px grey;border-radius:8px;cursor:pointer;margin-top:15px;margin-left:5px;float:left;}
+.city1:hover{color:white;font-size:1.6em;overflow:auto;box-shadow: 0px 4px 18px black;height:320px;}
+.dropdown-content{position:absolute;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);overflow:auto;max-height:200px;background-color:silver;text-align:justify;margin-top:-240px;}
+.i{color:black;opacity:0.9;margin-left:40px;margin-right:40px;}
+.i:hover{color:blue;}
+
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0;background-color:transparent}
+
+
+.form{border-radius:5px;padding:20px;width:70%;margin:auto;margin-top:20px;}
+.form1{width:auto;padding:10px;}
+.inputbox{width:30%;padding: 10px 10px;margin: 8px 0;display: inline-block;border: 1px solid black;padding-left:20px;border-radius: 8px;box-sizing: border-box;background-color:AliceBlue;min-width:320px;}
+.inputbox:focus{box-shadow:0 0 2px 2px grey;transition-duration:1s;border-radius: 8px;}
+
+
+
+
+
+#a{color:blue;}

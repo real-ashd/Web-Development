@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="css\css1.css">
+<link rel="stylesheet" type="text/css" href="css\W3.css">
+</head>
+<body>
+<center><img src="images/img17.jpg" class="w3-card-4" width="99%" height="100%">
+<H1><FONT FACE="Algerian" color="Blue"  ><I>DEPARTMENT OF STATISTICS</I></font></H1></center>
+<center>
+<ul class="w3-navbar w3-card-2 w3-light-grey" style="width:80%;font-size:30px;">
+  <li><a href="home22.html">Home</a></li>
+  <li class="w3-dropdown-hover">
+     <a href="#">Faculty Member</a>
+     <div class="w3-dropdown-content w3-light-grey w3-card-4">
+       <a href="Usir.html">Prof.P.V.Ubale</a>
+       <a href="Wsir.html">Prof.M.O. Wankhade</a>
+       <a href="Asir.html">Prof . V . S. Athvar</a>
+       <a href="Rmam.html">Miss.R.N.Chandak</a>
+     </div>
+  </li>
+  <li class="w3-right"><a href="contact.html">Contact Us</a></li>
+  <li><a href="aboutdepartment.html" class="active">About Department</a></li>  
+</ul></center>
+
+<div style="padding-left:10px;">
+<h3>Student Information:</h3>
+<table style="width:auto;" border="5px">
+<tr>
+<th>Year</th>
+<th>Number of Admission in 2018</th>
+<tr>
+<td>B.Sc.I</td>
+<td>70</td>
+<tr>
+<td>B.Sc.II</td>
+<td>57</td>
+<tr>
+<td>B.Sc.III</td>
+<td>35</td>
+</tr>
+</table>
+<h3>Facility Provided:</h3>
+ 1.Giving remedial teaching to every poor learners.<br>
+ 2.Improving practical knowledge of every student by explaining them practical on computers.<br>
+ 3.Teaching the students to draw practical knowledge using MS-Excel and MINITAB Software.<br>
+ 4.Giving Attention towards each and every student and trying to solve their problem personally.
+ 
+<h3>ExtraCurricularActivities:</h3>
+ 1.Field trip of  the students <br>
+ 2.Encouraging students for doing statistical survey<br>
+ 3.Giving the idea of statistical packages in practical<br>
+ 4.Encouraging student for participate in seminar and various statistical activities oranganised by other colleges in Amravati University. 
+<h3>Infrastructure of Lab:</h3>
+
+<div class="w3-content w3-section w3-round w3-card-4 w3-padding" style="max-width:80%">
+<img class="mySlides w3-animate-fading" src="images/img4.jpg" style="width:100%;height:480px;">
+  <img class="mySlides w3-animate-fading" src="images/img10.jpg" style="width:100%;height:480px;">
+  <img class="mySlides w3-animate-fading" src="images/img11.jpg" style="width:100%;height:480px;">
+  <img class="mySlides w3-animate-fading" src="images/img14.jpg" style="width:100%;height:480px;">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+
+<footer>
+<h4 id="foot"><strong>&copy;Copyright:G.S.Science ,Arts and Commerce Collage Khamgaon.<br>
+Developed by: <a href="developer.html" id="a">B.Sc III CSM</a></strong></h4>
+</footer>
+</body>
+</head>
+</html>

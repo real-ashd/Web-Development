@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="css\W3.css">
+<link rel="stylesheet" type="text/css" href="css\css.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<style>.city {display:none}</style>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(18.6390,72.8721),
+    zoom:12,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+
+<img src="images\banner.jpg" class="hover w3-round w3-border w3-padding w3-card-2" style="width:100%;height:320px;"></img>
+
+<div class="w3-shadow">
+<ul class="w3-navbar w3-blue w3-round w3-xlarge w3-margin-top">
+  <li class="active"><a href="Home.html" class="w3-hover-cyan w3-round"><i class="fa fa-home w3-xlarge"></i></a>
+  <li><a href="Login.html" class="menu w3-hover-cyan w3-round w3-hover-animate-zoom">Login</a>
+  <li><a href="Signup.html" class=" w3-hover-cyan w3-round">Sign Up</a>
+  <li class="w3-dropdown-hover w3-hover-cyan w3-round">
+      <a class="w3-hover-cyan w3-round">Beaches <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-card-4 w3-animate-zoom w3-blue w3-round" style="position:absolute;opacity:0.9;">
+      <a href="akshi.html" class=" w3-hover-cyan w3-round">Akshi</a>
+      <a href="mandwa.html" class=" w3-hover-cyan w3-round">Mandwa</a>
+	  <a href="nagaon.html" class=" w3-hover-cyan w3-round">Nagaon</a>
+	  <a href="awas.html" class=" w3-hover-cyan w3-round">Awas</a>
+    </div></li>
+  <li><a href="Feedback.html" class=" w3-hover-cyan w3-round">Feedback</a>
+  <li class=" w3-right"><a href="Contactus.html" class=" w3-hover-cyan w3-round">Contact Us</a>
+  </li>
+</ul></div>
+
+<header class="h1 w3-animate-left"><h1>Alibag City</h1></header>
+
+<h3 class="h2">Geographical Location :-</h3>
+<h4>Alibag is located about 120 km south of Mumbai, at 18<sup>o</sup>38'29"N 72<sup>o</sup>52'20"E. The average elevation is 0 metres (0 feet).The District Government offices are located along the sea coast road. Alibag is the center place of Raigad District.</h4>
+<div id="googleMap" class="maps"></div>
+
+<div class="container">
+<div class="city1 w3-teal w3-half">
+ Alibag is a coastal town and a municipal council in Raigad District of Maharashtra.
+ It is the headquarters of the Raigad district and is south of the city of Mumbai.
+ It is the headquarters of the Raigad district. Raigad's first name was "Kulaba".
+ It was developed in the 17th century by Sarkhel Kanhoji Aangre the naval chief of King Shivaji's Kingdom.
+ Revdanda, Chaul, Nagaon, Akshi, Varsoli, Thal, Navgaon, Kihim and Aawas villages were known as "Ashtagare".
+ A naval battle was fought at Varsoli between Kanhoji Aangre and Siddi of Janjira in 1706.
+ In 1722 English and Portuguese jointly attacked on Kulaba fort, and they lost this war.
+ At Chaul there was a battle between the English and Sakhoji in 1730.
+ Sakhoji won and brought down the losing party along with their captain at Kulaba.
+ Kanhoji even issued his own currency in the form of a silver coin called the Alibagi rupaiya. Alibag and its surrounding villages are the historic hinterland of Bene Israeli Jews. There is a synagogue in the "Israel Ali" area of the town. Alibag houses a magnetic observatory which was set up in 1904. It serves as one of the significant observatories forming part of a global network now run by Indian Institute of Geomagnetism. The observatory has two buildings; the first building has magnetometers that record changes occurring in the geomagnetic fields. The second building consists of precision recording instruments, which give data about geomagnetic storms caused by solar storms which is shared with other countries. It is from years that the Alibag Region and Raigad district is headed and ruled by the Bhartiya Shetkari Kamgar Paksha (Peasants and Workers Party of India).
+</div>
+<div class="w3-content w3-section w3-card-2 w3-half w3-round-xlarge" style="width:49%;float:right;position:relative;">
+  <img src="images\alibag2.jpg" class="mySlides w3-animate-opacity w3-round-xlarge" style="width:100%;height:320px;">
+  <img src="images\alibag3.jpg" class="mySlides w3-animate-opacity w3-round-xlarge" style="width:100%;height:320px;">
+  <img src="images\alibag1.jpg" class="mySlides w3-animate-opacity w3-round-xlarge" style="width:100%;height:320px;">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+    <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;margin-top:-25%;left:0" onclick="plusDivs(-1)"><</a>
+    <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;margin-top:-25%;right:0" onclick="plusDivs(1)">></a>
+  </div>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);}
+</script>
+</div>
+
+<div style="margin-bottom:30px;column-count:1;width:100%;height:auto;">
+<table class="w3-table w3-striped w3-bordered w3-card-4 w3-half">
+<tr>
+<th colspan="2" class="w3-blue" style="text-align:center;">Coordinates : 18.64<sup>o</sup> N 72.88<sup>o</sup> E</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>: India</td>
+</tr>
+<tr>
+<td>State</td>	<td>: Maharashtra</td>
+</tr>
+<tr>
+<td>District</td>	<td>: Raigad</td>
+</tr>
+<tr>
+<td>Founded by</td>	<td>: Shivaji</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>: 0 m (0 ft)</td>
+</tr>
+<tr>
+<td>Population (2011)</td>
+<td>: 20,743</td>
+ </tr>
+<tr>
+<td>Languages</td>	<td>: Marathi</td>
+</tr>
+<tr>
+<td>Time zone</td>
+<td>: IST (UTC+5:30)</td>
+</tr>
+<tr>
+<td>Postal Index Number</td>	<td>: 402201</td>
+</tr>
+<tr>
+<td>Telephone code</td>	<td>: 02141</td>
+</tr>
+<tr>
+<td>Climate</td>
+<td>: Aw</td>
+</tr>
+</table>
+
+<div class="w3-half">
+<video width="100%" height="240" controls poster="images\alibag4.jpg">
+    <source src="videos\mandwa.mp4" type="video/mp4">
+</video>
+
+<div>
+<h2 class="h1 w3-red" style="text-align:center;font-size:40px;color:darkgrey;margin:0px;">How to get To Alibag City</h2>
+<div class="w3-dropdown-hover">
+  <i class="i fa fa-car w3-xxxlarge" style="margin-left:80px;"></i></a>
+  <div class="dropdown-content w3-dropdown-content w3-border w3-animate-zoom">
+    One can reach Alibag via Pen (30 km), which is on the Mumbai (78 km) - Goa road. From Mumbai, one can reach Alibag by traveling on the Mumbai-Goa highway (NH-17) till Wadkhal (or Vadkhal) and taking the right fork from Wadkhal - the left fork being the road to Goa. It is approximately 108 km from Mumbai.
+  </div>
+</div>
+<div class="w3-dropdown-hover">
+  <i class="i fa fa-train w3-xxxlarge"></i></a>
+  <div class="dropdown-content w3-dropdown-content w3-border w3-animate-zoom">
+    The nearest rail railway station is at Pen. Through Pen, it is connected to Panvel and onwards to Mumbai and the Indian Railways network.
+  </div>
+</div>
+<div class="w3-dropdown-hover">
+  <i class="i fa fa-ship w3-xxxlarge"></i></a>
+  <div class="dropdown-content w3-dropdown-content w3-border w3-animate-zoom">
+    The nearest jetty is Mandwa From where catamaran/ferry services are available to Mumbai. Another port in the vicinity is Rewas, from where a ferry service is available to Ferry Wharf (Bhau cha Dhakka) (Dockyard Road). There is a jetty at Custom Bandar from where fishermen in Alibag set sail. One can reach Alibag by catamaran through Gateway of India to Mandwa or from Bhaucha Dhakka to Rewas and from Mandwa/Rewas to Alibag by bus. Ticket includes journey from Gateway to Mandwa and bus journey from Mandwa to Alibag bus stop. From Rewas to Alibag one needs to take State Transport bus or a rickshaw. Take the ferry from Gateway to Mandwa. Services are usually available from 6:00am till 6:00pm. The trip takes 40 to 55 minutes depending on the type of boat. From Mandwa operators carry passengers to Alibag in their own chartered buses. The bus journey time is 45 minutes. Alibag beach is walking distance from the bus-stop. Another option is to take a ferry from "Bhaucha Dhakka" to Rewas. Timings are the same but schedule may change depending on the tide. From Rewas take state transport bus or rickshaw to Alibag. Bus Journey time: 1 hour to reach Alibag. One benefit of using the Bhaucha Dhakka - Rewas route by ferry is that you can take a two-wheeler along on the ferry on this route for a nominal charge. You can go to Alibag by S.T. bus from Mumbai. From Mumbai to Alibag having daily 35-40 S.T. buses. Borivali, Thane, Kalyan, Pune, Kolhapur, Miraj, Nashik have buses to Alibag. Speedboats from the Gateway of India to Mandwa Jetty take roughly 20-25 minutes depending on the weather and can be hired at the Gateway of India at Jetty No. 5 which is opposite the Taj Mahal Hotel. The new jetty installed in 2014 at Mandwa ensures safety of guests traveling by speedboat.
+  </div>
+</div>
+<div class="w3-dropdown-hover">
+  <i class="i fa fa-plane w3-xxxlarge"></i></a>
+  <div class="dropdown-content w3-dropdown-content w3-border w3-animate-zoom" style="margin-top:-120px;">
+    The nearest airport is in Mumbai which is 140 km away.
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+<h6>&copy;Copyright<br>Developed by: <a href="ashu.html" id="a">Ashutosh Deshmukh</a></h6>
+</footer>
+
+</body>
+</html>
