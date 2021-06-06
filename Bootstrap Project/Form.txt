@@ -1,0 +1,12 @@
+fname=Ashutosh
+&mname=Kishor&
+lname=Deshmukh
+&gender=male
+&aadhar=676450762614
+&address=
+&pin=444312
+&city=Khamgaon
+&mob=9881821054
+&email=ashudeshmukh2797%40gmail.com
+&pass=ashu123
+&cpass=ashu123

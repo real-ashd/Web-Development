@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alibag Home</title>
+  <link rel="icon" type="image/png" href="images/microspectra.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css\W3.css">
+  <link rel="stylesheet" type="text/css" href="css\icons.css">
+  <link rel="stylesheet" type="text/css" href="css\css1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script type="text/javascript">
+  <!--Maps-->
+  function initialize() {
+    var mapProp = {
+      center:new google.maps.LatLng(18.6390,72.8721),
+      zoom:14,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</head>
+<body>
+
+<header>
+<!--Banner-->
+<img src="images\banner.jpg" class="hover w3-round w3-border w3-padding w3-card-2 w3-margin-bottom" style="width:100%;max-height:280px;"/>
+
+<!--Navigation Bar-->
+<nav class="navbar navbar-default w3-pale-blue" data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar w3-blue"></span>
+          <span class="icon-bar w3-blue"></span>
+          <span class="icon-bar w3-blue"></span>
+		</button>
+        <a href="#" class="logo a1 w3-tag w3-pale-blue w3-padding w3-round-large w3-large w3-text-blue cursor"><big class="w3-text-red">A</big>libag <big class="w3-text-red">B</big>eaches</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="w3-hover-pale-red w3-round w3-xlarge"><a href="home.html"  class="a active1"><i class="fa fa-home w3-xlarge w3-text-blue"></i> Home</a></li>
+		</ul>
+		<ul class="nav navbar-nav">
+		  <li class="w3-dropdown-hover">
+            <a class="a w3-round w3-hover-pale-red w3-xlarge">Beaches <i class="fa fa-caret-down"></i></a>
+             <div class="w3-dropdown-content w3-card-4 w3-animate-zoom w3-round" style="position:absolute;opacity:0.9;">
+				<a href="akshi.html" class=" w3-hover-pale-red w3-round a w3-large">Akshi</a>
+				<a href="mandwa.html" class=" w3-hover-pale-red w3-round a w3-large">Mandwa</a>
+				<a href="nagaon.html" class=" w3-hover-pale-red w3-round a w3-large">Nagaon</a>
+				<a href="awas.html" class=" w3-hover-pale-red w3-round a w3-large">Awas</a>
+			 </div></li>
+		  <li class="w3-hover-pale-red w3-round w3-xlarge"><a href="aboutus.html" class="a"><i class="fa fa-users w3-text-black"></i> About Us</a></li>
+		  <li class="w3-hover-pale-red w3-round"><a href="signup.html" class="a w3-xlarge"><span class="glyphicon glyphicon-user w3-text-green"></span> Sign Up</a></li>
+        </ul>
+		<ul class="nav navbar-nav navbar-right">
+           <li class="w3-hover-pale-red w3-round w3-xlarge"><a href="#login" data-toggle="modal" class="a"><span class="glyphicon glyphicon-log-in"></span> <span class="label w3-text-black"><big class="w3-text-blue">L</big>o<i class="w3-text-red">g</i><i class="w3-text-green">i</i><i class="w3-text-orange">n</i></span></h1></a></li>
+        </ul>
+	</div>
+</nav>
+</header>
+
+<!--Modal Login-->
+<div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+	<!--  <div class="modal-dialog modal-sm/lg/xs"> -->
+    
+    <!-- Modal content-->
+     <div class="modal-content w3-pale-red">
+        <div class="modal-header">
+          <button type="button" class="close w3-xxlarge w3-hover-text-red" data-dismiss="modal">&times;</button>
+          <h1 class="modal-title w3-center"><span class="label w3-text-black"><big class="w3-text-blue">L</big>o<i class="w3-text-red">g</i><i class="w3-text-green">i</i><i class="w3-text-orange">n</i></span></h1>
+        </div>
+        <div class="modal-body">
+          <div class="w3-center">
+	        <img src="images\avatar.png" style="width:60%;" class="w3-circle w3-margin-top">
+          </div>
+        <div class="w3-section w3-center w3-padding">
+	    <form name="f1" action="home.html">
+           <div class="form-group input-group">
+				<span class="input-group-addon"><i class="fas fa-envelope w3-xlarge"></i></span>
+				<input type="email" name="email" class="form-control input-lg" autocomplete required placeholder="Enter Username/Email Address" title="Enter Email ID">
+			</div>
+			<div class="form-group input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-lock w3-xlarge"></i></span>
+				<input type="password" name="pass" class="form-control input-lg" autocomplete required placeholder="Password" pattern=[A-Za-z0-9]{5,10} maxlength="10" title="Password must be 5-10 characters (No Speacial Characters!)">
+			</div>
+            <button class="w3-btn w3-blue w3-padding w3-hover-pale-blue w3-hover-text-blue w3-large w3-round w3-ripple" type="submit" value="Login">Login</button>
+		</form>
+		</div>
+		<center class="w3-margin-top-8 w3-text-center">New User?<a href="signup.html" class="w3-text-green w3-hover-text-red">Sign Up</a></center>
+     </div>
+     <div class="modal-footer w3-light-grey w3-round">
+          <button type="button" class="btn btn-danger w3-left" data-dismiss="modal">Cancel</button>
+		  <span class="w3-right w3-hover-text-red"><a href="#"><small>Forgot password?</small></a></span>
+     </div><!--Footer-->
+     </div>
+    </div><!--Modal Dialog-->
+</div><!--Modal Login-->
+</div>
+
+<h1>
+<span class="w3-text-blue w3-xxlarge w3-padding w3-animate-left"><b><big class="w3-text-red">A</big>libag <big class="w3-text-red">C</big>ity</b></span>
+</h1>
+<!--Alibag Location-->
+<div class="container-fluid">
+<h3 class="h2">Geographical Location</h3>
+<h6 class="h6 w3-opacity" id="p">Alibag is located about 120 km south of Mumbai, at 18<sup>o</sup>38'29"N 72<sup>o</sup>52'20"E. The average elevation is 0 metres (0 feet). The District Government offices are located along the sea coast road. Alibag is the center place of Raigad District.</h6>
+</div>
+
+
+<!--Map of Alibag-->
+<div id="googleMap" class="maps"></div>
+
+
+<!--Body of the Webpage-->
+<section class="w3-center w3-margin-bottom">
+<table class="w3-table w3-striped w3-bordered w3-card-4 w3-pale-green table-responsive col-sm-6" style="overflow:hidden;height:80%;">
+<tr>
+<th colspan="2" class="w3-blue" style="text-align:center;">Coordinates : 18.64<sup>o</sup> N 72.88<sup>o</sup> E</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>: India</td>
+</tr>
+<tr>
+<td>State</td>	<td>: Maharashtra</td>
+</tr>
+<tr>
+<td>District</td>	<td>: Raigad</td>
+</tr>
+<tr>
+<td>Founded by</td>	<td>: Shivaji</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>: 0 m (0 ft)</td>
+</tr>
+<tr>
+<td>Population (2011)</td>
+<td>: 20,743</td>
+ </tr>
+<tr>
+<td>Languages</td>	<td>: Marathi</td>
+</tr>
+<tr>
+<td>Time zone</td>
+<td>: IST (UTC+5:30)</td>
+</tr>
+<tr>
+<td>Postal Index Number</td>	<td>: 402201</td>
+</tr>
+<tr>
+<td>Telephone code</td>	<td>: 02141</td>
+</tr>
+<tr>
+<td>Climate</td>
+<td>: Aw</td>
+</tr>
+</table>
+
+<div class="container-fluid">
+<h1 class="w3-xxxlarge w3-text-shadow w3-text-cyan w3-red">Scenery of Alibag Beach</h1>
+<video src="videos\mandwa.mp4" type="video/mp4" class="col-sm-6" width="100%" height="340" controls poster="images\awas1.jpg" style="position:relative;background-image:url("images\alibag4.jpg")></video>
+</div><!--Video-->
+
+
+<div class="container-fluid w3-bordered w3-card-4 w3-margin-top" style="background:url(images/alibag2.jpg) no-repeat center fixed;background-size: cover;">
+<h2 class="w3-xxlarge w3-text-indigo" style="text-align:center;font-size:40px;color:darkgrey;margin:0px;"><b>How to get To Alibag City</b></h2>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active in"><a data-toggle="tab" href="#car"><i class="id fa fa-car w3-xxxlarge"></i></a></li>
+    <li><a data-toggle="tab" href="#train"><i class="id fa fa-train w3-xxxlarge"></i></a></li>
+    <li><a data-toggle="tab" href="#ship"><i class="id fa fa-ship w3-xxxlarge"></i></a></li>
+    <li><a data-toggle="tab" href="#plane"><i class="id fa fa-plane w3-xxxlarge"></i></a></li>
+  </ul>
+  <div class="tab-content w3-justify w3-text-black">
+    <div id="car" class="tab-pane fade in active w3-margin">
+      <h3 class="h2 w3-center">Cars</h3>
+      One can reach Alibag via Pen (30 km), which is on the Mumbai (78 km) - Goa road. From Mumbai, one can reach Alibag by traveling on the Mumbai-Goa highway (NH-17) till Wadkhal (or Vadkhal) and taking the right fork from Wadkhal - the left fork being the road to Goa. It is approximately 108 km from Mumbai.</p>
+    </div>
+    <div id="train" class="tab-pane fade w3-margin">
+      <h3 class="h2 w3-center">Train</h3>
+      The nearest rail railway station is at Pen. Through Pen, it is connected to Panvel and onwards to Mumbai and the Indian Railways network.
+    </div>
+    <div id="ship" class="tab-pane fade w3-margin">
+      <h3 class="h2 w3-center">Ship</h3>
+      The nearest jetty is Mandwa From where catamaran/ferry services are available to Mumbai. Another port in the vicinity is Rewas, from where a ferry service is available to Ferry Wharf (Bhau cha Dhakka) (Dockyard Road). There is a jetty at Custom Bandar from where fishermen in Alibag set sail. One can reach Alibag by catamaran through Gateway of India to Mandwa or from Bhaucha Dhakka to Rewas and from Mandwa/Rewas to Alibag by bus. Ticket includes journey from Gateway to Mandwa and bus journey from Mandwa to Alibag bus stop. From Rewas to Alibag one needs to take State Transport bus or a rickshaw. Take the ferry from Gateway to Mandwa. Services are usually available from 6:00am till 6:00pm. The trip takes 40 to 55 minutes depending on the type of boat. From Mandwa operators carry passengers to Alibag in their own chartered buses. The bus journey time is 45 minutes. Alibag beach is walking distance from the bus-stop. Another option is to take a ferry from "Bhaucha Dhakka" to Rewas. Timings are the same but schedule may change depending on the tide. From Rewas take state transport bus or rickshaw to Alibag. Bus Journey time: 1 hour to reach Alibag. One benefit of using the Bhaucha Dhakka - Rewas route by ferry is that you can take a two-wheeler along on the ferry on this route for a nominal charge. You can go to Alibag by S.T. bus from Mumbai. From Mumbai to Alibag having daily 35-40 S.T. buses. Borivali, Thane, Kalyan, Pune, Kolhapur, Miraj, Nashik have buses to Alibag. Speedboats from the Gateway of India to Mandwa Jetty take roughly 20-25 minutes depending on the weather and can be hired at the Gateway of India at Jetty No. 5 which is opposite the Taj Mahal Hotel. The new jetty installed in 2014 at Mandwa ensures safety of guests traveling by speedboat.
+    </div>
+    <div id="plane" class="tab-pane fade w3-margin">
+      <h3 class="h2 w3-center">Plane</h3>
+      The nearest airport is in Mumbai which is 140 km away.
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!--Alibag Info-->
+<div class="w3-margin w3-justify">
+<div class="media">
+    <div class="col-sm-6 w3-margin-top">  
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       <!-- Indicators -->
+       <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+       </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+       <div class="item active">
+	    <img src="images\alibag5.jpg" style="width:100%;">
+       </div>
+
+       <div class="item">
+         <img src="images\alibag4.jpg" style="width:100%">
+       </div>
+    
+      <div class="item">
+        <img src="images\alibag3.jpg" style="width:100%;">
+      </div>
+    </div>
+     <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+    <div class="col-sm-6">
+	<h3 class="w3-text-black media-heading w3-center w3-xxlarge">About City</h3>
+	<p class=" w3-opacity">Alibag is a coastal town and a municipal council in Raigad District of Maharashtra.
+ It is the headquarters of the Raigad district and is south of the city of Mumbai.
+ It is the headquarters of the Raigad district. Raigad's first name was "Kulaba".
+ It was developed in the 17th century by Sarkhel Kanhoji Aangre the naval chief of King Shivaji's Kingdom.
+ Revdanda, Chaul, Nagaon, Akshi, Varsoli, Thal, Navgaon, Kihim and Aawas villages were known as "Ashtagare".
+ A naval battle was fought at Varsoli between Kanhoji Aangre and Siddi of Janjira in 1706.
+ In 1722 English and Portuguese jointly attacked on Kulaba fort, and they lost this war.
+ At Chaul there was a battle between the English and Sakhoji in 1730.
+ Sakhoji won and brought down the losing party along with their captain at Kulaba.
+ Kanhoji even issued his own currency in the form of a silver coin called the Alibagi rupaiya. Alibag and its surrounding villages are the historic hinterland of Bene Israeli Jews. There is a synagogue in the "Israel Ali" area of the town. Alibag houses a magnetic observatory which was set up in 1904. It serves as one of the significant observatories forming part of a global network now run by Indian Institute of Geomagnetism. The observatory has two buildings; the first building has magnetometers that record changes occurring in the geomagnetic fields.</p>
+    </div>
+  </div>
+</div>
+
+
+<footer class="w3-pale-blue w3-margin-top w3-center">
+   <div class="w3-blue" style="padding-top:3px;"> </div>
+    <div class="container-fluid">
+	    <section class="w3-sand w3-margin-top w3-round-xlarge">
+          <div class="col-sm-4 w3-xlarge">
+            <ul class="nav nav-pills nav-stacked w3-small" style="text-align:left;">
+			  <li class="w3-text-black w3-opacity w3-xlarge cursor"><a href="feedback.html"><i class="fa fa-comments"></i> Feedback</a></li>
+			  <li><a href="feedback.html">About Alibag Tourism</a></li>
+			  <li><a href="feedback.html">For Guidance</a></li>
+			  <li><a href="feedback.html">Services</a></li>
+			  <li><a href="feedback.html">Places</a></li>
+			</ul>
+	      </div>
+	      <div class="col-sm-4 w3-xlarge">
+		     <ul class="nav nav-pills nav-stacked w3-small" style="text-align:left;">
+			    <li class="w3-text-black w3-opacity w3-xlarge cursor">Social Links</a></li>
+			    <li><a href="#"><i class="fa fa-facebook-square w3-text-indigo w3-xlarge w3-hover-text-yellow"></i> Facebook</a></li>
+			    <li><a href="#"><i class="fa fa-twitter-square w3-text-blue w3-xlarge w3-hover-text-yellow"></i> Twitter</a></li>
+			    <li><a href="#"><i class="fa fa-whatsapp w3-text-green w3-xlarge w3-hover-text-yellow"></i> Whatsapp</a></li>
+			    <li><a href="#"><i class="fab fa-instagram w3-xlarge w3-hover-text-yellow" style="color:#D2691E"></i> Instagram</a></li>
+		  </div>
+          <div class="col-sm-4 w3-xlarge">
+		    <ul class="nav nav-pills nav-stacked w3-small" style="text-align:left;">
+			  <li class="w3-hover-text-yellow w3-text-black w3-opacity w3-xlarge cursor"><a href="contactus.html"><i class="fa fa-phone"></i> Contact Us</a></li>
+			  <li><a href="#"><i class="fas fa-map-marker-alt w3-text-black w3-xlarge w3-hover-text-yellow"></i> Jawahar Nagar, Gandhi Road, Alibag.<br>PIN Code : 444444</a></li>
+			  <li><a href="#"><i class="fas fa-mobile-alt w3-text-black w3-xlarge w3-hover-text-yellow"></i> Phone No.: 9999999999, 8976543210</a></li>
+			  <li><a href="#"><i class="fas fa-phone w3-text-black w3-xlarge w3-hover-text-yellow"></i> Office No.: (07762) 259823.</a></li>
+			  <li><a href="#"><i class="fa fa-envelope  w3-text-black w3-xlarge w3-hover-text-yellow"></i> alibagtour24@gmail.com</a></li>
+			</ul>
+	      </div>
+        </section>	    
+		<hr>
+		   <section class="w3-text-black w3-half w3-padding">
+	        <i class="fa fa-copyright"></i> 2018 <a href="#" class="w3-hover-text-yellow w3-text-grey">Alibag Tourism</a>. All Rights Reserved
+	       </section>
+           <section class="w3-half w3-padding">
+	         <span class="w3-text-black">Developed by : <a href="http://microspectra.in/" class="w3-hover-text-yellow w3-text-grey">Microspectra Software Technology, Shegaon</a><img src="images/microspectra.png" class="w3-red w3-margin mlogo"> 
+	         </span>
+	       </section>
+    </div><!--container-fluid-->
+</footer>
+
+
+
+</body>
+</html>
